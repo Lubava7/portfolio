@@ -31,8 +31,7 @@ body {
   position: relative;
   animation: bgMove 5s linear infinite;
 }
-.container:after {
-  display: table-cell;
+.cont-after {
   position: absolute;
   top: 0;
   left: 0;
@@ -50,8 +49,7 @@ body {
   margin-left: -20px;
   position: absolute;
 }
-.effects:before {
-  display: table-cell;
+.before {
   content: " ";
   position: absolute;
   top: 0;
@@ -61,8 +59,7 @@ body {
   animation: gradientSize 1.5s linear infinite;
   box-shadow: inset 0 0 10em rgba(0, 0, 0, 1);
 }
-.effects:after {
-  display: table-cell;
+.after {
   width: 1px;
   height: 100%;
   background: rgba(0, 0, 0, 1);
