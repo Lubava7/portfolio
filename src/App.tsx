@@ -8,7 +8,6 @@ function App() {
       <div className="effects">
         <CaseData />
       </div>
-      <div className="effects"></div>
     </div>
   );
 }
