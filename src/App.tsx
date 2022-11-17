@@ -1,17 +1,16 @@
 import "./App.css";
+import PageLayout from "./layouts/PageLayout";
 import CaseData from "./components/CaseData/CaseData";
+import Work from "./components/Work/Work";
 
 function App() {
   return (
-    <div className="container">
-      <div className="cont-after"></div>
-      <div className="coffee-mark"></div>
-      <div className="effects">
-        <div className="before"></div>
-        <div className="after"></div>
+    <PageLayout>
+      <div className="main-content">
+        <CaseData />
+        <Work />
       </div>
-      <CaseData />
-    </div>
+    </PageLayout>
   );
 }
 
