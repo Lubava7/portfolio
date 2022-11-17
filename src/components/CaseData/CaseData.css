@@ -1,3 +1,5 @@
 .data-container {
   margin: 5%;
+  position: inherit;
+  z-index: 3;
 }
