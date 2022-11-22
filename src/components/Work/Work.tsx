@@ -7,9 +7,18 @@ const Work = () => {
     <div className="work-content">
       {workArray.map((item) => (
         <div className="project-card">
-          <div className="layout-card"></div>
           <div className="header-cont">
-            <div>
+            <div className="proj-info">
+              <div className="img-cont">
+                {item.image.map((img) => (
+                  <div className="image">
+                    <div className="clip"></div>
+                    <div>
+                      <img src={img} />
+                    </div>
+                  </div>
+                ))}
+              </div>
               <h1> {item.title} </h1>
               <p> {item.description} </p>
               <div>
@@ -18,16 +27,6 @@ const Work = () => {
                 ))}
                 <address>{item.link}</address>
               </div>
-            </div>
-            <div>
-              {item.image.map((img) => (
-                <div className="image">
-                  <div className="clip"></div>
-                  <div className="img-cont">
-                    <img src={img} />
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </div>
