@@ -8,6 +8,7 @@ function App() {
     <PageLayout>
       <div className="main-content">
         <CaseData name={"Liubava Kanivetc"} age={22} exp={"1 - 3"} />
+
         <Work />
       </div>
     </PageLayout>
