@@ -24,14 +24,26 @@ const CaseData = ({ name, age, exp }: Props) => {
             <p>work experience : {exp} years</p>
           </div>
           <div>
+            <a target="_blank" href="https://github.com/Lubava7">
+              GitHub
+            </a>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              href="https://hh.ru/applicant/resumes/view?resume=d5f45eb6ff08d8d9930039ed1f69654b635352"
+            >
+              Resume HH
+            </a>
+          </div>
+          <div>
             <p>Core technologies :</p>
             <section>
-              <span>HTML</span>
+              <span>HTML, Css</span>
               <span>React</span>
-              <span>Css</span>
+              <span>Sass</span>
               <span>JavaScript</span>
-              <span>StoryBook</span>
-              <span>i18-next</span>
+              <span>TypeScript</span>
             </section>
           </div>
         </div>

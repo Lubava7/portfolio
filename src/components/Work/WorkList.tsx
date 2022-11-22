@@ -36,13 +36,13 @@ export const workArray: ProjectInterface[] = [
     ["Css", "Html", "Flexbox", "JS", "JS classes", "gh-pages"],
     "https://lubava7.github.io/dmitry-zakaz/"
   ),
-  // ProjList(
-  //   "Markup on Figma layout",
-  //   "landing description change the link!landing description change the link!landing description change the link!landing description change the link!",
-  //   ["../../images/fingerprint.jpg"],
-  //   ["Css", "Html", "Figma"],
-  //   "https://lubava7.github.io/dmitry-zakaz/"
-  // ),
+  ProjList(
+    "My first CRA project",
+    "My first time with create-react-app",
+    ["../../images/fingerprint.jpg"],
+    ["Css", "Html", "Figma", "JS", "CRA", "React", "React-routing", "gh-pages"],
+    "https://lubava7.github.io/react-got/"
+  ),
   ProjList(
     "VueCLI-app",
     "Vue-CLI app. ID for login : 5f8475902b0be670555f1bb3 . (test) ",
@@ -116,8 +116,8 @@ export const workArray: ProjectInterface[] = [
     "https://lubava7.github.io/venarus/"
   ),
   ProjList(
-    "Test Task for Onpoint",
-    "Test Task for Onpoint, with cra",
+    "Tablet App for Onpoint",
+    "Test Task for Onpoint, with cra. ONLY for Tablet 1024x768 screen extension",
     ["../../images/fingerprint.jpg"],
     [
       "Css",
