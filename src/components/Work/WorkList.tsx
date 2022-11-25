@@ -32,7 +32,9 @@ export const workArray: ProjectInterface[] = [
   ProjList(
     "Markup Landing",
     "Just simple landing with html and css",
-    ["src/images/screenshots/land.jpg"],
+    [
+      "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/land.jpg?raw=true",
+    ],
     ["Css", "Html", "gh-pages"],
     "https://lubava7.github.io/landing-page/"
   ),
@@ -57,7 +59,9 @@ export const workArray: ProjectInterface[] = [
   ProjList(
     "VueCLI-app",
     "Vue-CLI app. ID for login : 5f8475902b0be670555f1bb3 . (test) ",
-    ["../../images/fingerprint.jpg"],
+    [
+      "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/vue-cli.jpg?raw=true",
+    ],
     [
       "Vue",
       "Css",
@@ -128,14 +132,18 @@ export const workArray: ProjectInterface[] = [
   ProjList(
     "Venarus ad Page",
     "Advertising page for Venarus(test) ",
-    ["../../images/fingerprint.jpg"],
+    [
+      "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/venarus.jpg?raw=true",
+    ],
     ["Css", "Html", "Sass", "@keyframes", "gh-pages"],
     "https://lubava7.github.io/venarus/"
   ),
   ProjList(
     "Tablet App for Onpoint",
     "Test Task for Onpoint, with cra. ONLY for Tablet 1024x768 screen extension",
-    ["../../images/fingerprint.jpg"],
+    [
+      "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/onpoint.jpg?raw=true",
+    ],
     [
       "Css",
       "Sass",
@@ -151,21 +159,27 @@ export const workArray: ProjectInterface[] = [
   ProjList(
     "Yamaguchi test task",
     "Test Task for Yamaguchi. Design page with their ads",
-    ["../../images/fingerprint.jpg"],
+    [
+      "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/yamaguchiTable.jpg?raw=true",
+    ],
     ["Css", "Html", "JS", "gh-pages"],
     "https://lubava7.github.io/yamaguchi/"
   ),
   ProjList(
     "Voice Control Yamaguchi",
     "Test Task for Yamaguchi. Design page with Yamaguchi corporate character for voice control options promotion",
-    ["../../images/fingerprint.jpg"],
+    [
+      "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/yamaguchi.jpg?raw=true",
+    ],
     ["Css", "Html", "JS", "@keyframes", "gh-pages"],
     "https://lubava7.github.io/vc-yamaguchi/"
   ),
   ProjList(
     "Welbex test",
     "Test task for Welbex comp. ",
-    ["../../images/fingerprint.jpg"],
+    [
+      "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/welbex.jpg?raw=true",
+    ],
     ["Css", "Html", "gh-pages"],
     "https://lubava7.github.io/test2-maket/"
   ),
