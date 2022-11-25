@@ -30,16 +30,27 @@ const ProjList = (
 
 export const workArray: ProjectInterface[] = [
   ProjList(
+    "Markup Landing",
+    "Just simple landing with html and css",
+    ["src/images/screenshots/land.jpg"],
+    ["Css", "Html", "gh-pages"],
+    "https://lubava7.github.io/landing-page/"
+  ),
+  ProjList(
     "Portfolio website for a photographer",
     "Site for a photographer. Layout was carried out from a maket in Photoshop, still in development",
-    ["../../images/fingerprint.jpg"],
+    [
+      "https://github.com/Lubava7/port2/blob/master/src/images/img/dmitry.png?raw=true",
+    ],
     ["Css", "Html", "Flexbox", "JS", "JS classes", "gh-pages"],
     "https://lubava7.github.io/dmitry-zakaz/"
   ),
   ProjList(
     "My first CRA project",
     "My first time with create-react-app",
-    ["../../images/fingerprint.jpg"],
+    [
+      "https://github.com/Lubava7/port2/blob/master/src/images/img/GOT.png?raw=true",
+    ],
     ["Css", "Html", "Figma", "JS", "CRA", "React", "React-routing", "gh-pages"],
     "https://lubava7.github.io/react-got/"
   ),
@@ -65,8 +76,10 @@ export const workArray: ProjectInterface[] = [
   ProjList(
     "Landing",
     "Markup on Figma Layout , test try markup for online-shop.(test)",
-    ["../../images/fingerprint.jpg"],
-    ["Css", "Html", "anchor", "bootsrap", "Flexbox", "JS", "gh-pages"],
+    [
+      "https://github.com/Lubava7/port2/blob/master/src/images/img/jasmine.png?raw=true",
+    ],
+    ["Css", "Html", "anchor", "Flexbox", "JS", "gh-pages"],
     "https://lubava7.github.io/lend/"
   ),
   ProjList(
@@ -88,7 +101,9 @@ export const workArray: ProjectInterface[] = [
   ProjList(
     "Book List ",
     "React app for store your books with local storage",
-    ["../../images/fingerprint.jpg"],
+    [
+      "https://github.com/Lubava7/port2/blob/master/src/images/img/booklist.png?raw=true",
+    ],
     [
       "Css",
       "Html",
@@ -104,7 +119,9 @@ export const workArray: ProjectInterface[] = [
   ProjList(
     "My first HTML-markup",
     "My first try copy the Google page",
-    ["../../images/fingerprint.jpg"],
+    [
+      "https://github.com/Lubava7/port2/blob/master/src/images/img/googlepage.jpg?raw=true",
+    ],
     ["Css", "Html", "gh-pages"],
     "https://lubava7.github.io/google-page/"
   ),
