@@ -30,6 +30,27 @@ const ProjList = (
 
 export const workArray: ProjectInterface[] = [
   ProjList(
+    "VueCLI-app",
+    "Vue-CLI app. ID for login : 5f8475902b0be670555f1bb3 . (test) ",
+    [
+      "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/vue-cli.jpg?raw=true",
+    ],
+    [
+      "Vue",
+      "Css",
+      "amcharts",
+      "vue-router",
+      "vuex",
+      "vue-cli",
+      "Sass",
+      "Sass-loaer",
+      "JS",
+      "LocalStorage",
+      "gh-pages",
+    ],
+    "https://lubava7.github.io/vue-test-task-LeadHit/"
+  ),
+  ProjList(
     "Markup Landing",
     "Just simple landing with html and css",
     [
@@ -56,27 +77,7 @@ export const workArray: ProjectInterface[] = [
     ["Css", "Html", "Figma", "JS", "CRA", "React", "React-routing", "gh-pages"],
     "https://lubava7.github.io/react-got/"
   ),
-  ProjList(
-    "VueCLI-app",
-    "Vue-CLI app. ID for login : 5f8475902b0be670555f1bb3 . (test) ",
-    [
-      "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/vue-cli.jpg?raw=true",
-    ],
-    [
-      "Vue",
-      "Css",
-      "amcharts",
-      "vue-router",
-      "vuex",
-      "vue-cli",
-      "Sass",
-      "Sass-loaer",
-      "JS",
-      "LocalStorage",
-      "gh-pages",
-    ],
-    "https://lubava7.github.io/vue-test-task-LeadHit/"
-  ),
+
   ProjList(
     "Landing",
     "Markup on Figma Layout , test try markup for online-shop.(test)",
@@ -89,7 +90,9 @@ export const workArray: ProjectInterface[] = [
   ProjList(
     "Todo List",
     "React-app Todo-list first try.",
-    ["../../images/fingerprint.jpg"],
+    [
+      "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/todolist.jpg?raw=true",
+    ],
     [
       "Css",
       "Html",
