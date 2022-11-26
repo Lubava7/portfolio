@@ -87,24 +87,24 @@ export const workArray: ProjectInterface[] = [
     ["Css", "Html", "anchor", "Flexbox", "JS", "gh-pages"],
     "https://lubava7.github.io/lend/"
   ),
-  ProjList(
-    "Todo List",
-    "React-app Todo-list first try.",
-    [
-      "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/todolist.jpg?raw=true",
-    ],
-    [
-      "Css",
-      "Html",
-      "React",
-      "CRA",
-      "JS",
-      "LocalStorage",
-      "React Hooks",
-      "gh-pages",
-    ],
-    "https://lubava7.github.io/react-todo-new/"
-  ),
+  // ProjList(
+  //   "Todo List",
+  //   "React-app Todo-list first try.",
+  //   [
+  //     "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/todolist.jpg?raw=true",
+  //   ],
+  //   [
+  //     "Css",
+  //     "Html",
+  //     "React",
+  //     "CRA",
+  //     "JS",
+  //     "LocalStorage",
+  //     "React Hooks",
+  //     "gh-pages",
+  //   ],
+  //   "https://lubava7.github.io/react-todo-new/"
+  // ),
   ProjList(
     "Book List ",
     "React app for store your books with local storage",
@@ -123,15 +123,15 @@ export const workArray: ProjectInterface[] = [
     ],
     "https://lubava7.github.io/react-booklist/"
   ),
-  ProjList(
-    "My first HTML-markup",
-    "My first try copy the Google page",
-    [
-      "https://github.com/Lubava7/port2/blob/master/src/images/img/googlepage.jpg?raw=true",
-    ],
-    ["Css", "Html", "gh-pages"],
-    "https://lubava7.github.io/google-page/"
-  ),
+  // ProjList(
+  //   "My first HTML-markup",
+  //   "My first try copy the Google page",
+  //   [
+  //     "https://github.com/Lubava7/port2/blob/master/src/images/img/googlepage.jpg?raw=true",
+  //   ],
+  //   ["Css", "Html", "gh-pages"],
+  //   "https://lubava7.github.io/google-page/"
+  // ),
   ProjList(
     "Venarus ad Page",
     "Advertising page for Venarus(test) ",
@@ -159,15 +159,15 @@ export const workArray: ProjectInterface[] = [
     ],
     "https://lubava7.github.io/onpoint-test/"
   ),
-  ProjList(
-    "Yamaguchi test task",
-    "Test Task for Yamaguchi. Design page with their ads",
-    [
-      "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/yamaguchiTable.jpg?raw=true",
-    ],
-    ["Css", "Html", "JS", "gh-pages"],
-    "https://lubava7.github.io/yamaguchi/"
-  ),
+  // ProjList(
+  //   "Yamaguchi test task",
+  //   "Test Task for Yamaguchi. Design page with their ads",
+  //   [
+  //     "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/yamaguchiTable.jpg?raw=true",
+  //   ],
+  //   ["Css", "Html", "JS", "gh-pages"],
+  //   "https://lubava7.github.io/yamaguchi/"
+  // ),
   ProjList(
     "Voice Control Yamaguchi",
     "Test Task for Yamaguchi. Design page with Yamaguchi corporate character for voice control options promotion",
