@@ -14,14 +14,17 @@ const CaseData = ({ name, age, exp }: Props) => {
       </div>
       <div className="data-body">
         <div className="scroll-data">
-          <div>
-            <p>name : {name} </p>
+          <div className="bold_text">
+            <p>name :</p>
+            <p>{name}</p>
           </div>
-          <div>
-            <p>age : {age} </p>
+          <div className="bold_text">
+            <p>age : </p>
+            <p> {age}</p>
           </div>
-          <div>
-            <p>work experience : {exp} years</p>
+          <div className="bold_text">
+            <p>work experience : </p>
+            <p>{exp} years</p>
           </div>
           <div>
             <a target="_blank" href="https://github.com/Lubava7">
@@ -36,7 +39,7 @@ const CaseData = ({ name, age, exp }: Props) => {
               Resume HH
             </a>
           </div>
-          <div>
+          <div className="bold_text_2">
             <p>Core technologies :</p>
             <section>
               <span>HTML, Css</span>

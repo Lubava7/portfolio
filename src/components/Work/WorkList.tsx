@@ -31,7 +31,7 @@ const ProjList = (
 export const workArray: ProjectInterface[] = [
   ProjList(
     "VueCLI-app",
-    "Vue-CLI app. ID for login : 5f8475902b0be670555f1bb3 . (test) ",
+    "ID for login: 5f8475902b0be670555f1bb3 . App with login form and Graph.",
     [
       "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/vue-cli.jpg?raw=true",
     ],
@@ -52,7 +52,7 @@ export const workArray: ProjectInterface[] = [
   ),
   ProjList(
     "Markup Landing",
-    "Just simple landing with html and css",
+    "Simple landing with html and css",
     [
       "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/land.jpg?raw=true",
     ],
@@ -60,8 +60,8 @@ export const workArray: ProjectInterface[] = [
     "https://lubava7.github.io/landing-page/"
   ),
   ProjList(
-    "Portfolio website for a photographer",
-    "Site for a photographer. Layout was carried out from a maket in Photoshop, still in development",
+    "Portfolio",
+    "Portfolio for a photographer. Layout was built based on a design in Photoshop. WIP",
     [
       "https://github.com/Lubava7/port2/blob/master/src/images/img/dmitry.png?raw=true",
     ],
@@ -70,7 +70,7 @@ export const workArray: ProjectInterface[] = [
   ),
   ProjList(
     "My first CRA project",
-    "My first time with create-react-app",
+    "GOT wiki.Small Wiki built using React and GOT character API.",
     [
       "https://github.com/Lubava7/port2/blob/master/src/images/img/GOT.png?raw=true",
     ],
@@ -80,7 +80,7 @@ export const workArray: ProjectInterface[] = [
 
   ProjList(
     "Landing",
-    "Markup on Figma Layout , test try markup for online-shop.(test)",
+    "Landing Page For An E-Commerce.Built based on a Figma Design.",
     [
       "https://github.com/Lubava7/port2/blob/master/src/images/img/jasmine.png?raw=true",
     ],
@@ -107,7 +107,7 @@ export const workArray: ProjectInterface[] = [
   // ),
   ProjList(
     "Book List ",
-    "React app for store your books with local storage",
+    "An app to store your books. Built with React. Saving implemented with Local Storage Web API.",
     [
       "https://github.com/Lubava7/port2/blob/master/src/images/img/booklist.png?raw=true",
     ],
@@ -134,7 +134,7 @@ export const workArray: ProjectInterface[] = [
   // ),
   ProjList(
     "Venarus ad Page",
-    "Advertising page for Venarus(test) ",
+    "Advertising page for Venarus",
     [
       "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/venarus.jpg?raw=true",
     ],
@@ -143,7 +143,7 @@ export const workArray: ProjectInterface[] = [
   ),
   ProjList(
     "Tablet App for Onpoint",
-    "Test Task for Onpoint, with cra. ONLY for Tablet 1024x768 screen extension",
+    "ONLY for Tablet 1024x768 screen extension",
     [
       "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/onpoint.jpg?raw=true",
     ],
@@ -170,7 +170,7 @@ export const workArray: ProjectInterface[] = [
   // ),
   ProjList(
     "Voice Control Yamaguchi",
-    "Test Task for Yamaguchi. Design page with Yamaguchi corporate character for voice control options promotion",
+    "Design page with Yamaguchi corporate character for voice control options promotion",
     [
       "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/yamaguchi.jpg?raw=true",
     ],
@@ -178,8 +178,8 @@ export const workArray: ProjectInterface[] = [
     "https://lubava7.github.io/vc-yamaguchi/"
   ),
   ProjList(
-    "Welbex test",
-    "Test task for Welbex comp. ",
+    "Welbex",
+    "Markup page ",
     [
       "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/welbex.jpg?raw=true",
     ],

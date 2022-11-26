@@ -1,6 +1,6 @@
 .work-content {
   transition: 1s all;
-  width: 75%;
+  width: 95%;
   height: 90%;
   margin: 1%;
   position: relative;
@@ -9,12 +9,16 @@
 }
 .all-data {
   transition: 1s all;
-  width: 100%;
+  width: 60%;
   height: 80%;
-  margin: 1% 0 0 0;
+  margin: 0;
   position: relative;
   overflow: auto;
   scroll-snap-type: y mandatory;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .work-content::-webkit-scrollbar {
   width: 0;
@@ -122,7 +126,7 @@ address {
 @media screen and (max-width: 426px) {
   .all-data {
     transition: 1s all;
-    margin: 0 0 0 0;
+    width: 100%;
   }
   .proj-info h1 {
     margin: 20px 0 0 0;

@@ -12,6 +12,7 @@
     z-index: 3;
     transition: 1s all;
     height: 50%;
+    width: 100%;
   }
 }
 .data-header {
@@ -40,4 +41,17 @@
 .data-body span {
   text-decoration: underline;
   line-height: 25px;
+}
+.bold_text {
+  display: flex;
+  flex-direction: row;
+}
+.bold_text p {
+  margin: 10px 1px;
+}
+.bold_text :nth-child(1) {
+  font-weight: 600;
+}
+.bold_text_2 p {
+  font-weight: 600;
 }
