@@ -11,20 +11,21 @@ body {
   background: lighten(#bfac97, 17%);
   width: 100%;
   height: 100%;
-}
-.main-content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0;
+  scroll-behavior: smooth;
 }
 
-@media screen and (max-width: 601px) {
-  .main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
+.main-content {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.one,
+.two,
+.three,
+.four {
+  height: 100%;
+  scroll-snap-align: start;
+  border: 2px solid blue;
 }

@@ -5,6 +5,7 @@
   height: 70%;
   overflow-x: hidden;
   transition: 1s all;
+  border: 2px solid black;
 }
 @media screen and (max-width: 424px) {
   .data-container {
@@ -16,7 +17,7 @@
   }
 }
 .data-header {
-  position: fixed;
+  /* position: fixed; \\ было изначально, если что вернуть */
   width: 100%;
 }
 .data-body {
