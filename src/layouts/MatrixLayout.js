@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 // https://codepen.io/harryheman/pen/ZEEPRba?editors=1010
 // https://pablo.gg/en/blog/coding/creating-a-matrix-source-code-effect-background-for-my-website-with-react/
 
-const MatrixLayout = ({ timeout }) => {
+const MatrixLayout = ({ timeout, children }) => {
   const canvas = useRef();
 
   useEffect(() => {
@@ -56,7 +56,10 @@ const MatrixLayout = ({ timeout }) => {
         overflow: "hidden",
       }}
     >
-      <canvas ref={canvas} />
+      {children}
+      <div>
+        <canvas ref={canvas} />
+      </div>
     </div>
   );
 };

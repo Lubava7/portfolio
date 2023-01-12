@@ -4,6 +4,7 @@ import CaseData from "./components/CaseData/CaseData";
 import Work from "./components/Work/Work";
 import Contact from "./components/Contact/Contact";
 import Main from "./components/MainPage/Main";
+import MatrixPage from "./components/MatrixPage/MatrixPage";
 
 import MatrixLayout from "../src/layouts/MatrixLayout";
 
@@ -19,7 +20,8 @@ function App() {
           <CaseData name={"Liubava Kanivetc"} age={22} exp={"1.5"} />
         </div>
         <div className="three">
-          <MatrixLayout timeout={100} />
+          <MatrixPage />
+          {/* <MatrixLayout timeout={100} /> */}
         </div>
         <div className="four">
           <Work />

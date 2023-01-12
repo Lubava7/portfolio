@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 .main_body {
   background: linear-gradient(to bottom, #6919ff, #993bb1, #993bb1);
   width: 100%;
@@ -6,10 +8,12 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  font-family: "Bebas Neue", cursive;
 }
 .header {
-  border: 2px dotted black;
-  width: 100%;
+  border-top: 2px dotted black;
+  border-bottom: 2px dotted black;
+  width: 99%;
   padding: 20px 0;
   margin: 5px;
   display: flex;
@@ -22,16 +26,26 @@ p {
 }
 a {
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+}
+a p {
+  margin: 0 10px;
 }
 .content {
-  border: 2px dotted black;
-  width: 100%;
+  border-top: 2px dotted black;
+  border-bottom: 2px dotted black;
+  width: 99%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20% 0;
   margin: 5px;
+  letter-spacing: 5px;
 }
 button {
   background-color: #6919ffea;
@@ -41,10 +55,37 @@ button {
   width: 200px;
   height: 70px;
   cursor: pointer;
+  font-size: 15px;
 }
 .phone {
   display: flex;
+  flex-direction: column;
+  margin: 0 30px 0 0;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer div {
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 30%;
+  align-items: center;
+  width: 100%;
+  font-size: 40px;
+  margin: 0;
+  animation: bounce 1s infinite linear;
+}
+@keyframes bounce {
+  0% {
+    margin: 0;
+  }
+  50% {
+    margin: 20px 0 0;
+  }
+  100% {
+    margin: 0;
+  }
 }

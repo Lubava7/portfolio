@@ -42,6 +42,7 @@ const Contact = () => {
     color: "#a5a8aa",
     "& .MuiFilledInput-underline": {
       borderBottomColor: "#a5a8aa",
+      textDecoration: "none",
     },
 
     "& .MuiInput-underline:after": {
@@ -54,6 +55,7 @@ const Contact = () => {
   return (
     <WrapperBox>
       <form
+        id="send_email"
         className="form"
         onSubmit={handleSubmit}
         action="https://formspree.io/f/xdovovkj"
@@ -62,6 +64,27 @@ const Contact = () => {
         <Typography variant="h4" sx={{ margin: "20px", textAlign: "center" }}>
           Leave your feedback, wishes and complaints here!
         </Typography>
+        <CustomTextField
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <Icon icon="mdi:user" color="#a5a8aa" />
+              </InputAdornment>
+            ),
+          }}
+          sx={{
+            width: "93%",
+            margin: "20px",
+            boxShadow: "2px 2px 2px 2px #1f2731",
+            borderRadius: "6px",
+          }}
+          color="success"
+          label="your name"
+          variant="filled"
+          id="name"
+          type="name"
+          name="name"
+        />
         <CustomTextField
           InputProps={{
             startAdornment: (
@@ -76,6 +99,7 @@ const Contact = () => {
             boxShadow: "2px 2px 2px 2px #1f2731",
             borderRadius: "6px",
           }}
+          color="success"
           label="your email address"
           variant="filled"
           id="email"

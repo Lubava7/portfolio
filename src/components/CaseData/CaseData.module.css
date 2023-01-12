@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital@0;1&display=swap");
+
+.data_container {
+  height: 100%;
+  overflow: hidden;
+  transition: 1s all;
+  background-color: #fbfcfc;
+  color: #333;
+  border: 6px solid #212121;
+  display: flex;
+  flex-direction: column;
+  font-family: "Vollkorn", serif;
+}
+h2 {
+  padding: 0;
+  margin: 10px 0 0;
+}
+.i {
+  padding: 0;
+  margin: 0 0 20px;
+  font-style: italic;
+}
+.data_block {
+  width: 70%;
+  max-width: 400px;
+  color: #fbfcfc;
+  background-color: #333;
+  padding: 0 0 10px 10px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.info a {
+  text-decoration: none;
+  color: #fbfcfc;
+  margin: 0 10px;
+}
+.info p {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.data_body {
+  /* margin: 70px 0 0 0; */
+  width: 100%;
+  height: 70%;
+  position: relative;
+  overflow-y: scroll;
+}
+.data_body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.data_body section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.data_body span {
+  text-decoration: underline;
+  line-height: 25px;
+}
