@@ -2,17 +2,16 @@
   margin: 0 5%;
   position: inherit;
   z-index: 3;
-  height: 70%;
+  height: 100%;
   overflow-x: hidden;
   transition: 1s all;
-  border: 2px solid black;
 }
 @media screen and (max-width: 424px) {
   .data-container {
     margin: 0 0 0 2%;
     z-index: 3;
     transition: 1s all;
-    height: 50%;
+    height: 100%;
     width: 100%;
   }
 }

@@ -1,0 +1,50 @@
+.main_body {
+  background: linear-gradient(to bottom, #6919ff, #993bb1, #993bb1);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header {
+  border: 2px dotted black;
+  width: 100%;
+  padding: 20px 0;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+p {
+  margin: 0 30px;
+}
+a {
+  cursor: pointer;
+}
+.content {
+  border: 2px dotted black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20% 0;
+  margin: 5px;
+}
+button {
+  background-color: #6919ffea;
+  border: 1px solid rgb(175, 73, 201);
+  border-radius: 6px;
+  margin: 20px;
+  width: 200px;
+  height: 70px;
+  cursor: pointer;
+}
+.phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30%;
+}

@@ -49,13 +49,11 @@ const MatrixLayout = ({ timeout }) => {
     <div
       style={{
         background: "#000000",
-        // overflow: "hidden",
         position: "relative",
-        // height: "50%",
-        // width: "100%",
+        height: "100%",
+        width: "100%",
         zIndex: 1,
-        // left: "0",
-        // top: "0",
+        overflow: "hidden",
       }}
     >
       <canvas ref={canvas} />
