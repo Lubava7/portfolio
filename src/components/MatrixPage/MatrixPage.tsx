@@ -6,11 +6,9 @@ const MatrixPage = () => {
   return (
     <MatrixLayout timeout={100}>
       <div className={matrix.body}>
-        <body>
-          <code>
-            <p>&lt; Matrix /&gt;</p>
-          </code>
-        </body>
+        {/* <h2>&lt; Matrix /&gt;</h2> */}
+
+        <h3>&lt; WORK IS UNDERWAY /&gt;</h3>
       </div>
     </MatrixLayout>
   );

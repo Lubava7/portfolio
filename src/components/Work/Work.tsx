@@ -1,38 +1,37 @@
-import "./Work.css";
-import PageLayout from "src/layouts/PageLayout";
+import wc from "./Work.module.css";
 import { workArray } from "./WorkList";
 
 const Work = () => {
   return (
-    <PageLayout>
-      <div className="all-data">
-        <h1 className="evidence"> Evidence :</h1>
-        <div className="work-content">
-          {workArray.map((item) => (
-            <div className="project-card" key={item.description}>
-              <div className="img-cont">
-                {/* {item.image.map((img) => (
-                <div className="image">
-                  <div className="clip"></div>
-                  <div>
-                    <img src={img} />
+    <div id="my_works" className={wc.work_content}>
+      {workArray.map((item) => (
+        <div key={item.id} className={wc.project_card}>
+          {item.image.map((img) => (
+            <div
+              style={{
+                backgroundImage: `url(${img})`,
+              }}
+              className={wc.img_back}
+              key={item.id}
+            >
+              <div className={wc.text_box}>
+                <div className={wc.text}>
+                  <h1> {item.title} </h1>
+                  <p> {item.description} </p>
+
+                  <div className={wc.span_box}>
+                    {item.stack.map((el) => (
+                      <span key={el}>{el}</span>
+                    ))}
                   </div>
+                  <p className={wc.link}>{item.link}</p>
                 </div>
-              ))} */}
-              </div>
-              <h1> {item.title} </h1>
-              <p> {item.description} </p>
-              <div>
-                {item.stack.map((el) => (
-                  <span key={el}> {el} </span>
-                ))}
-                <address>{item.link}</address>
               </div>
             </div>
           ))}
         </div>
-      </div>
-    </PageLayout>
+      ))}
+    </div>
   );
 };
 

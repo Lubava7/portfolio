@@ -1,27 +1,22 @@
 import "./App.css";
-import PageLayout from "./layouts/PageLayout";
-import CaseData from "./components/CaseData/CaseData";
+import CVdata from "./components/CVdata/CVdata";
 import Work from "./components/Work/Work";
 import Contact from "./components/Contact/Contact";
 import Main from "./components/MainPage/Main";
 import MatrixPage from "./components/MatrixPage/MatrixPage";
 
-import MatrixLayout from "../src/layouts/MatrixLayout";
-
 function App() {
   return (
     <>
-      {/* <PageLayout> */}
       <div className="main-content">
         <div className="one">
           <Main />
         </div>
         <div className="two">
-          <CaseData name={"Liubava Kanivetc"} age={22} exp={"1.5"} />
+          <CVdata name={"Liubava Kanivetc"} age={22} exp={"1.5"} />
         </div>
         <div className="three">
           <MatrixPage />
-          {/* <MatrixLayout timeout={100} /> */}
         </div>
         <div className="four">
           <Work />
@@ -30,7 +25,6 @@ function App() {
           <Contact />
         </div>
       </div>
-      {/* </PageLayout> */}
     </>
   );
 }

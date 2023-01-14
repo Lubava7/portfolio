@@ -3,8 +3,22 @@
 .body {
   font-family: "Source Code Pro", monospace;
   color: rgb(17, 146, 0);
-  font-size: 30px;
+  font-size: 60px;
   position: absolute;
   z-index: 3;
   background-color: transparent;
+  filter: blur(3px);
+  animation: vanish 2s infinite linear;
+  opacity: 1;
+}
+@keyframes vanish {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -3,12 +3,16 @@ import { useForm, ValidationError } from "@formspree/react";
 
 import { styled } from "@mui/system";
 
-import { TextField } from "@mui/material";
+import {
+  TextField,
+  Box,
+  Button,
+  Typography,
+  InputAdornment,
+} from "@mui/material";
+
 import Textarea from "@mui/joy/Textarea";
-import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
-import Typography from "@mui/material/Typography";
-import InputAdornment from "@mui/material/InputAdornment";
 
 import { Icon } from "@iconify/react";
 
@@ -16,9 +20,10 @@ import { Icon } from "@iconify/react";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xdovovkj");
+
   if (state.succeeded) {
     return (
-      <>
+      <Box>
         <Typography
           variant="h4"
           sx={{ margin: "20% 0 5% 0", textAlign: "center" }}
@@ -28,7 +33,7 @@ const Contact = () => {
         <Typography variant="h4" sx={{ textAlign: "center" }}>
           (refresh to resend)
         </Typography>
-      </>
+      </Box>
     );
   }
   const WrapperBox = styled("div")({
@@ -40,13 +45,8 @@ const Contact = () => {
   });
   const CustomTextField = styled(TextField)({
     color: "#a5a8aa",
-    "& .MuiFilledInput-underline": {
-      borderBottomColor: "#a5a8aa",
-      textDecoration: "none",
-    },
-
-    "& .MuiInput-underline:after": {
-      borderBottomColor: "#a5a8aa",
+    "& label.MuiFormLabel-root": {
+      color: "#a5a8aa",
     },
     "& label.Mui-focused": {
       color: "#a5a8aa",
@@ -61,7 +61,10 @@ const Contact = () => {
         action="https://formspree.io/f/xdovovkj"
         method="POST"
       >
-        <Typography variant="h4" sx={{ margin: "20px", textAlign: "center" }}>
+        <Typography
+          variant="h4"
+          sx={{ margin: "20px", textAlign: "center", color: "#a5a8aa" }}
+        >
           Leave your feedback, wishes and complaints here!
         </Typography>
         <CustomTextField
@@ -77,6 +80,7 @@ const Contact = () => {
             margin: "20px",
             boxShadow: "2px 2px 2px 2px #1f2731",
             borderRadius: "6px",
+            color: "#a5a8aa",
           }}
           color="success"
           label="your name"
@@ -98,6 +102,8 @@ const Contact = () => {
             margin: "20px",
             boxShadow: "2px 2px 2px 2px #1f2731",
             borderRadius: "6px",
+            color: "#a5a8aa",
+            backgroundColor: "#1f3345",
           }}
           color="success"
           label="your email address"
@@ -112,6 +118,7 @@ const Contact = () => {
             margin: "20px",
             width: "93%",
             boxShadow: "2px 2px 2px 2px #1f2731",
+            color: "#a5a8aa",
           }}
           color="success"
           disabled={false}

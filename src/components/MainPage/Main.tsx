@@ -24,6 +24,9 @@ const Main = () => {
         <a href="#case_data">
           <button>See more</button>
         </a>
+        <a href="#my_works">
+          <button>my works</button>
+        </a>
         <div>
           <Icon icon="pixelarticons:arrow-down" />
           <Icon icon="pixelarticons:arrow-down" />

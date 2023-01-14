@@ -1,6 +1,7 @@
 import { ReactElement } from "react";
 
 export interface ProjectInterface {
+  id: number;
   title: string;
   description: string;
   image: string[];
@@ -9,6 +10,7 @@ export interface ProjectInterface {
 }
 
 const ProjList = (
+  id: number,
   title: string,
   description: string,
   image: string[],
@@ -16,6 +18,7 @@ const ProjList = (
   link: string
 ): ProjectInterface => {
   return {
+    id,
     title,
     description,
     image,
@@ -30,6 +33,7 @@ const ProjList = (
 
 export const workArray: ProjectInterface[] = [
   ProjList(
+    1,
     "VueCLI-app",
     "ID for login: 5f8475902b0be670555f1bb3 . App with login form and Graph.",
     [
@@ -51,6 +55,7 @@ export const workArray: ProjectInterface[] = [
     "https://lubava7.github.io/vue-test-task-LeadHit/"
   ),
   ProjList(
+    2,
     "Markup Landing",
     "Simple landing with html and css",
     [
@@ -60,6 +65,7 @@ export const workArray: ProjectInterface[] = [
     "https://lubava7.github.io/landing-page/"
   ),
   ProjList(
+    3,
     "Portfolio",
     "Portfolio for a photographer. Layout was built based on a design in Photoshop. WIP",
     [
@@ -69,6 +75,7 @@ export const workArray: ProjectInterface[] = [
     "https://lubava7.github.io/dmitry-zakaz/"
   ),
   ProjList(
+    4,
     "My first CRA project",
     "GOT wiki.Small Wiki built using React and GOT character API.",
     [
@@ -79,6 +86,7 @@ export const workArray: ProjectInterface[] = [
   ),
 
   ProjList(
+    5,
     "Landing",
     "Landing Page For An E-Commerce.Built based on a Figma Design.",
     [
@@ -106,6 +114,7 @@ export const workArray: ProjectInterface[] = [
   //   "https://lubava7.github.io/react-todo-new/"
   // ),
   ProjList(
+    6,
     "Book List ",
     "An app to store your books. Built with React. Saving implemented with Local Storage Web API.",
     [
@@ -133,6 +142,7 @@ export const workArray: ProjectInterface[] = [
   //   "https://lubava7.github.io/google-page/"
   // ),
   ProjList(
+    7,
     "Venarus ad Page",
     "Advertising page for Venarus",
     [
@@ -142,6 +152,7 @@ export const workArray: ProjectInterface[] = [
     "https://lubava7.github.io/venarus/"
   ),
   ProjList(
+    8,
     "Tablet App for Onpoint",
     "ONLY for Tablet 1024x768 screen extension",
     [
@@ -169,6 +180,7 @@ export const workArray: ProjectInterface[] = [
   //   "https://lubava7.github.io/yamaguchi/"
   // ),
   ProjList(
+    9,
     "Voice Control Yamaguchi",
     "Design page with Yamaguchi corporate character for voice control options promotion",
     [
@@ -178,6 +190,7 @@ export const workArray: ProjectInterface[] = [
     "https://lubava7.github.io/vc-yamaguchi/"
   ),
   ProjList(
+    10,
     "Welbex",
     "Markup page ",
     [

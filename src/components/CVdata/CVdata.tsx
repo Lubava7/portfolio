@@ -1,5 +1,7 @@
 // import React, { useEffect, useState } from "react";
-import style from "./CaseData.module.css";
+import style from "./CVdata.module.css";
+
+import CVworks from "./CVworks";
 
 import { Icon } from "@iconify/react";
 
@@ -27,7 +29,7 @@ const CaseData = ({ name, age, exp }: Props) => {
             </p>
             <p>
               <Icon icon="ic:outline-location-on" color="#fbfcfc" />
-              <a href="#">planet Earth</a>
+              <a href="##">planet Earth</a>
             </p>
             <p>
               <Icon icon="dashicons:admin-site-alt3" color="#fbfcfc" />
@@ -84,6 +86,9 @@ const CaseData = ({ name, age, exp }: Props) => {
           <section>
             <span>CS50 - Computer Science</span>
           </section>
+          <div>
+            <CVworks />
+          </div>
         </div>
       </div>
     </>
