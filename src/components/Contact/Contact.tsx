@@ -1,15 +1,10 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
+import contact from "./Contact.module.css";
 import { styled } from "@mui/system";
 
-import {
-  TextField,
-  Box,
-  Button,
-  Typography,
-  InputAdornment,
-} from "@mui/material";
+import { TextField, Button, Typography, InputAdornment } from "@mui/material";
 
 import Textarea from "@mui/joy/Textarea";
 import SendIcon from "@mui/icons-material/Send";
@@ -23,7 +18,7 @@ const Contact = () => {
 
   if (state.succeeded) {
     return (
-      <Box>
+      <div className={contact.if_success}>
         <Typography
           variant="h4"
           sx={{ margin: "20% 0 5% 0", textAlign: "center" }}
@@ -33,13 +28,14 @@ const Contact = () => {
         <Typography variant="h4" sx={{ textAlign: "center" }}>
           (refresh to resend)
         </Typography>
-      </Box>
+      </div>
     );
   }
   const WrapperBox = styled("div")({
     width: "100%",
     height: "100%",
     backgroundColor: "#1f3345",
+    color: "#a5a8aa",
     // position: "relative",
     zIndex: 1,
   });

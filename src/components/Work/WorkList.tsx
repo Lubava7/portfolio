@@ -25,13 +25,35 @@ const ProjList = (
     stack,
     link: (
       <a href={link} target="_blank">
-        go to site
+        Check it out ↩
       </a>
     ),
   };
 };
 
 export const workArray: ProjectInterface[] = [
+  ProjList(
+    0,
+    "Current Project(In dev.)",
+    "Full-stack project , copy of YouTube",
+    [
+      "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/BobTube.jpg?raw=true ",
+    ],
+    [
+      "React",
+      "JS, TS",
+      "Css",
+      "Html",
+      "Node",
+      "nodemon",
+      "Express",
+      "PostgreSQL",
+      "pgAdmin4",
+      "http query methods",
+      "gh-pages",
+    ],
+    "#my_works"
+  ),
   ProjList(
     1,
     "VueCLI-app",

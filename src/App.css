@@ -33,7 +33,8 @@ body {
 .two,
 .three,
 .four,
-.five {
+.five,
+.six {
   width: 100%;
   height: 100vh;
   scroll-snap-align: start;

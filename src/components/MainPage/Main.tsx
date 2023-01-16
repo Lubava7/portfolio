@@ -22,10 +22,10 @@ const Main = () => {
       </div>
       <div className={main.footer}>
         <a href="#case_data">
-          <button>See more</button>
+          <button className={main.btn}>See more</button>
         </a>
         <a href="#my_works">
-          <button>my works</button>
+          <button className={main.btn}>my works</button>
         </a>
         <div>
           <Icon icon="pixelarticons:arrow-down" />
