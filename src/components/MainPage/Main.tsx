@@ -18,7 +18,7 @@ const Main = () => {
         </div>
       </div>
       <div className={main.content}>
-        <h1>Developer</h1>
+        <h1>Developer.</h1>
       </div>
       <div className={main.footer}>
         <a href="#case_data">

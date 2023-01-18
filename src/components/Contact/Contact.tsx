@@ -6,63 +6,81 @@ import { styled } from "@mui/system";
 
 import { TextField, Button, Typography, InputAdornment } from "@mui/material";
 
-import Textarea from "@mui/joy/Textarea";
+import { Textarea } from "@mui/joy";
 import SendIcon from "@mui/icons-material/Send";
 
 import { Icon } from "@iconify/react";
 
-// import contact from "./Contact.module.css";
-
 const Contact = () => {
   const [state, handleSubmit] = useForm("xdovovkj");
 
+  const SuccessTypography = styled(Typography)({
+    margin: "20% 0 5% 0",
+    fontSize: " 1.5em",
+  });
   if (state.succeeded) {
     return (
       <div className={contact.if_success}>
-        <Typography
-          variant="h4"
-          sx={{ margin: "20% 0 5% 0", textAlign: "center" }}
-        >
+        <SuccessTypography className={contact.h4_succes} variant="h4">
           Thanks for your feedback!
-        </Typography>
-        <Typography variant="h4" sx={{ textAlign: "center" }}>
+        </SuccessTypography>
+        <SuccessTypography className={contact.h4_succes} variant="h4">
           (refresh to resend)
-        </Typography>
+        </SuccessTypography>
       </div>
     );
   }
   const WrapperBox = styled("div")({
     width: "100%",
     height: "100%",
-    backgroundColor: "#1f3345",
-    color: "#a5a8aa",
-    // position: "relative",
+    backgroundColor: "#c8cac85a",
     zIndex: 1,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
   });
   const CustomTextField = styled(TextField)({
-    color: "#a5a8aa",
+    width: "93%",
+    margin: "20px",
+    borderRadius: "6px",
+    border: "1px solid #bfa9a9",
     "& label.MuiFormLabel-root": {
-      color: "#a5a8aa",
+      color: "#babdbe",
+      fontFamily: "Amatic SC, cursive",
+      fontSize: "25px",
     },
-    "& label.Mui-focused": {
-      color: "#a5a8aa",
+    "& .MuiInputBase-input": {
+      color: "#babdbe",
+      fontFamily: "Amatic SC, cursive",
     },
+  });
+  const H4Typography = styled(Typography)({
+    fontFamily: "Amatic SC, cursive",
+    fontSize: "1.5em",
+    margin: "20px",
+    textAlign: "center",
+    color: "#babdbe",
+  });
+  const CustomTextarea = styled(Textarea)({
+    margin: "20px",
+    width: "93%",
+    color: "#babdbe",
+    fontSize: "25px",
+    border: "1px solid #bfa9a9",
   });
   return (
     <WrapperBox>
       <form
         id="send_email"
-        className="form"
+        className={contact.main_form}
         onSubmit={handleSubmit}
         action="https://formspree.io/f/xdovovkj"
         method="POST"
       >
-        <Typography
-          variant="h4"
-          sx={{ margin: "20px", textAlign: "center", color: "#a5a8aa" }}
-        >
-          Leave your feedback, wishes and complaints here!
-        </Typography>
+        <H4Typography variant="h4">
+          Wishes? Complaints? Any comments?Leave it here.. I'll deal with it.
+        </H4Typography>
         <CustomTextField
           InputProps={{
             startAdornment: (
@@ -71,16 +89,9 @@ const Contact = () => {
               </InputAdornment>
             ),
           }}
-          sx={{
-            width: "93%",
-            margin: "20px",
-            boxShadow: "2px 2px 2px 2px #1f2731",
-            borderRadius: "6px",
-            color: "#a5a8aa",
-          }}
           color="success"
           label="your name"
-          variant="filled"
+          variant="outlined"
           id="name"
           type="name"
           name="name"
@@ -93,46 +104,37 @@ const Contact = () => {
               </InputAdornment>
             ),
           }}
-          sx={{
-            width: "93%",
-            margin: "20px",
-            boxShadow: "2px 2px 2px 2px #1f2731",
-            borderRadius: "6px",
-            color: "#a5a8aa",
-            backgroundColor: "#1f3345",
-          }}
           color="success"
           label="your email address"
-          variant="filled"
+          variant="outlined"
           id="email"
           type="email"
           name="email"
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
-        <Textarea
-          sx={{
-            margin: "20px",
-            width: "93%",
-            boxShadow: "2px 2px 2px 2px #1f2731",
-            color: "#a5a8aa",
-          }}
+        <CustomTextarea
+          className={contact.textarea}
           color="success"
-          disabled={false}
-          minRows={6}
+          minRows={3}
           placeholder="type your message here ..."
           size="lg"
-          variant="soft"
           id="message"
           name="message"
         />
+
         <ValidationError
           prefix="Message"
           field="message"
           errors={state.errors}
         />
         <Button
-          sx={{ margin: "20px", width: "200px" }}
-          color="success"
+          sx={{
+            margin: "20px",
+            width: "200px",
+            backgroundColor: "#e34127",
+            color: "#babdbe",
+          }}
+          // color="success"
           variant="contained"
           endIcon={<SendIcon />}
           type="submit"

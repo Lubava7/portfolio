@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@200&display=swap");
 
 .data_container {
   height: 100%;
@@ -9,7 +10,8 @@
   border: 6px solid #212121;
   display: flex;
   flex-direction: column;
-  font-family: "Vollkorn", serif;
+  /* font-family: "Vollkorn", serif; */
+  font-family: "Rokkitt", serif;
 }
 h2 {
   padding: 0;
@@ -47,15 +49,20 @@ h2 {
   align-items: center;
 }
 .data_body {
-  width: 100%;
+  width: 95%;
   height: 100%;
   position: relative;
   overflow-y: scroll;
   padding: 30px 0 50px 5%;
 }
 .data_body::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+  width: 15px;
+  border-radius: 8px;
+  background-color: rgb(133, 133, 133);
+}
+.data_body::-webkit-scrollbar-thumb {
+  background-color: #212121;
+  border-radius: 8px;
 }
 
 .data_body section {

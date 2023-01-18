@@ -64,13 +64,13 @@ const CaseData = ({ name, age, exp }: Props) => {
           </div>
         </div>
         <div className={style.data_body}>
-          <p>
+          {/* <p>
             &lt; Software engineer with a proven ability to adapt in both
             self-starting and collaborative environments while staying focused
             on achieving high-quality results under strict deadlines. Eager to
             obtain a challenging position at a prestigious company that will
             expand my learning and build upon my developer skills. /&gt;
-          </p>
+          </p> */}
           <p>expirience : more than {exp} years</p>
           <p>Core technologies :</p>
           <section>

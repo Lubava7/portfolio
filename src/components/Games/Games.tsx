@@ -13,7 +13,7 @@ const Games = () => {
       </div>
       <div className={game.scroll_item}>
         <iframe
-          className={game.memory}
+          className={game.ttt}
           src="https://lubava7.github.io/tic-tac-toe-game//"
           title="memory game"
         ></iframe>

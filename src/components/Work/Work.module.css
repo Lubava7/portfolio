@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
 .work_content {
   width: 100%;
   height: 100%;
@@ -49,6 +51,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  color: #ffffff;
 }
 .text_box {
   position: relative;
@@ -56,6 +59,8 @@
   width: 100%;
   backdrop-filter: blur(30px);
   transition: 100ms backdrop-filter linear;
+
+  font-family: "Michroma", sans-serif;
 }
 .text_box:hover {
   backdrop-filter: none;
@@ -69,7 +74,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  color: rgb(8, 144, 255);
+  color: #4b4b4b;
   padding: 10px;
 }
 .text p {
@@ -82,5 +87,5 @@
   font-size: 35px;
   font-weight: 500;
   line-height: 100px;
-  color: rgb(8, 144, 255);
+  color: #4b4b4b;
 }

@@ -4,7 +4,7 @@ import Work from "./components/Work/Work";
 import Contact from "./components/Contact/Contact";
 import Main from "./components/MainPage/Main";
 import MatrixPage from "./components/MatrixPage/MatrixPage";
-import Games from "./components/Games/Games";
+// import Games from "./components/Games/Games";
 
 function App() {
   return (
@@ -14,16 +14,19 @@ function App() {
           <Main />
         </div>
         <div className="two">
-          <CVdata name={"Liubava Kanivetc"} age={22} exp={"1.5"} />
+          <CVdata name={"Liubava Kanivetc"} age={22} exp={"1.7"} />
         </div>
         <div className="six">
-          <Games />
+          {/* <Games /> */}
+          <p>mini games coming soon</p>
+          {/* <div>side arrow</div> */}
         </div>
         <div className="three">
           <MatrixPage />
         </div>
         <div className="four">
           <Work />
+          {/* <div>side arrow</div> */}
         </div>
         <div className="five">
           <Contact />
