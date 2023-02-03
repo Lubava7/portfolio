@@ -58,7 +58,9 @@ export const workArray: ProjectInterface[] = [
     11,
     "Solar System",
     "Simple landing with JS Classes",
-    ["src/images/screenshots/solar_system.jpg"],
+    [
+      "https://github.com/Lubava7/portfolio/blob/main/src/images/screenshots/solar_system.jpg?raw=true",
+    ],
     ["JS", "Css", "Html", "JS Classes , OOP", "gh-pages"],
     "#my_works"
   ),
