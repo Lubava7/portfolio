@@ -55,6 +55,14 @@ export const workArray: ProjectInterface[] = [
     "#my_works"
   ),
   ProjList(
+    11,
+    "Solar System",
+    "Simple landing with JS Classes",
+    ["src/images/screenshots/solar_system.jpg"],
+    ["JS", "Css", "Html", "JS Classes , OOP", "gh-pages"],
+    "#my_works"
+  ),
+  ProjList(
     1,
     "VueCLI-app",
     "ID for login: 5f8475902b0be670555f1bb3 . App with login form and Graph.",
