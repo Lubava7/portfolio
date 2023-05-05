@@ -1,39 +1,9 @@
+import React from "react";
 import "./App.css";
-import CVdata from "./components/CVdata/CVdata";
-import Work from "./components/Work/Work";
-import Contact from "./components/Contact/Contact";
-import Main from "./components/MainPage/Main";
-import MatrixPage from "./components/MatrixPage/MatrixPage";
-// import Games from "./components/Games/Games";
+import RoutesWrapper from "./routing";
 
 function App() {
-  return (
-    <>
-      <div className="main-content">
-        <div className="one">
-          <Main />
-        </div>
-        <div className="two">
-          <CVdata name={"Liubava Kanivetc"} age={22} exp={"1.7"} />
-        </div>
-        <div className="six">
-          {/* <Games /> */}
-          <p>mini games coming soon</p>
-          {/* <div>side arrow</div> */}
-        </div>
-        <div className="three">
-          <MatrixPage />
-        </div>
-        <div className="four">
-          <Work />
-          {/* <div>side arrow</div> */}
-        </div>
-        <div className="five">
-          <Contact />
-        </div>
-      </div>
-    </>
-  );
+  return <RoutesWrapper />;
 }
 
 export default App;

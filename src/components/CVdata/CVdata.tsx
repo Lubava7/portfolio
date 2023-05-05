@@ -1,5 +1,5 @@
 // import React, { useEffect, useState } from "react";
-import style from "./CVdata.module.css";
+// import style from "./CVdata.module.css";
 
 import CVworks from "./CVworks";
 
@@ -14,11 +14,11 @@ type Props = {
 const CaseData = ({ name, age, exp }: Props) => {
   return (
     <>
-      <div className={style.data_container} id="case_data">
-        <div className={style.data_block}>
+      <div id="case_data">
+        <div>
           <h2>{name}</h2>
-          <p className={style.i}>Web Developer</p>
-          <div className={style.info}>
+          <p>Web Developer</p>
+          <div>
             <p>
               <Icon icon="bi:envelope-heart" color="#fbfcfc" />
               <a href="#send_email">liubava.k@bk.ru</a>
@@ -63,14 +63,7 @@ const CaseData = ({ name, age, exp }: Props) => {
             </p>
           </div>
         </div>
-        <div className={style.data_body}>
-          {/* <p>
-            &lt; Software engineer with a proven ability to adapt in both
-            self-starting and collaborative environments while staying focused
-            on achieving high-quality results under strict deadlines. Eager to
-            obtain a challenging position at a prestigious company that will
-            expand my learning and build upon my developer skills. /&gt;
-          </p> */}
+        <div>
           <p>expirience : more than {exp} years</p>
           <p>Core technologies :</p>
           <section>

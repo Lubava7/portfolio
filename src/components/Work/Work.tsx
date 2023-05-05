@@ -1,37 +1,26 @@
-import wc from "./Work.module.css";
+import React, { useState } from "react";
+
 import { workArray } from "./WorkList";
+
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+
+import { styles, boxStyles } from "./styled";
 
 const Work = () => {
   return (
-    <div id="my_works" className={wc.work_content}>
+    <Box sx={styles}>
       {workArray.map((item) => (
-        <div key={item.id} className={wc.project_card}>
-          {item.image.map((img) => (
-            <div
-              style={{
-                backgroundImage: `url(${img})`,
-              }}
-              className={wc.img_back}
-              key={item.id}
-            >
-              <div className={wc.text_box}>
-                <div className={wc.text}>
-                  <h1> {item.title} </h1>
-                  <p> {item.description} </p>
-
-                  <div className={wc.span_box}>
-                    {item.stack.map((el) => (
-                      <span key={el}>{el}</span>
-                    ))}
-                  </div>
-                  <p className={wc.link}>{item.link}</p>
-                </div>
-              </div>
-            </div>
+        <Box key={item.id} sx={boxStyles}>
+          <Typography>{item.link}</Typography>
+          {item.stack.map((el) => (
+            <Box key={el}>{el}</Box>
           ))}
-        </div>
+          <Typography> {item.description} </Typography>
+        </Box>
       ))}
-    </div>
+    </Box>
   );
 };
 
