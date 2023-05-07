@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[482],{9482:function(a,o,e){e.r(o),o.default={body:"MatrixPage_body__aRYYs",vanish:"MatrixPage_vanish__RyDFj"}}}]);
+//# sourceMappingURL=482.87567692.chunk.js.map
