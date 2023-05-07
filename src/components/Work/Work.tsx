@@ -45,14 +45,13 @@ const Work = () => {
   }, []);
 
   const tabs = [
-    {
-      label: "My first CRA project",
-      // component: cra,
-      component: textTestComp[5],
-      img: "https://github.com/Lubava7/port2/blob/master/src/images/img/GOT.png?raw=true",
-      link: "https://lubava7.github.io/react-got/",
-    },
-
+    // {
+    //   label: "My first CRA project",
+    //   // component: cra,
+    //   component: textTestComp[5],
+    //   img: "https://github.com/Lubava7/port2/blob/master/src/images/img/GOT.png?raw=true",
+    //   link: "https://lubava7.github.io/react-got/",
+    // },
     {
       label: "Solar System",
       // component: solar,
@@ -82,13 +81,13 @@ const Work = () => {
       img: "",
       link: "https://rixap.ru/",
     },
-    {
-      label: "Booklist",
-      component: booklist,
-      // component: textTestComp[6],
-      img: "",
-      link: "https://lubava7.github.io/react-booklist/",
-    },
+    // {
+    //   label: "Booklist",
+    //   component: booklist,
+    //   // component: textTestComp[6],
+    //   img: "",
+    //   link: "https://lubava7.github.io/react-booklist/",
+    // },
   ];
 
   return (
