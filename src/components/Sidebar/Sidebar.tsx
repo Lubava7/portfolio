@@ -14,32 +14,27 @@ import ListItemText from "@mui/material/ListItemText";
 
 import Contact from "src/components/Contact/Contact";
 import AboutMe from "src/components/AboutMe/AboutMe";
-import CVworks from "src/components/CVdata/CVworks";
+import CVdata from "src/components/CVdata/CVdata";
 import Work from "src/components/Work/Work";
 
 import { Icon } from "@iconify/react";
 
-import { SidebarWrapper } from "./styled";
+import { DrawerWrapper, SideBar } from "./styled";
 
 type Anchor = "left";
 
 const Sidebar = () => {
   const [activeTab, setActiveTab] = useState(() => {
-    const storedValue = localStorage.getItem("activeTab");
+    const storedValue = localStorage.getItem("activeTab1");
     return storedValue !== null ? parseInt(storedValue) : 0;
   });
 
   const handleClick = useCallback((index: any) => {
     setActiveTab(index);
-    localStorage.setItem("activeTab", index);
+    localStorage.setItem("activeTab1", index);
   }, []);
 
-  const [state, setState] = useState({
-    top: false,
-    left: false,
-    bottom: false,
-    right: false,
-  });
+  const [left, setLeft] = useState(false);
 
   const toggleDrawer =
     (anchor: Anchor, open: boolean) =>
@@ -52,42 +47,43 @@ const Sidebar = () => {
         return;
       }
 
-      setState({ ...state, [anchor]: open });
+      setLeft(open);
     };
 
   const tabs = [
     {
       label: "_about",
-      component: <AboutMe />,
+      component1: <AboutMe />,
       path: "/portfolio/about",
     },
     {
       label: "_contacts",
-      component: <Contact />,
+      component1: <Contact />,
       path: "/portfolio/contacts",
     },
     {
       label: "_works",
-      component: <Work />,
+      component1: <Work />,
       path: "/portfolio/works",
     },
     {
       label: "_CV",
-      component: <CVworks />,
+      component1: <CVdata />,
       path: "/portfolio/cv",
     },
   ];
 
   return (
-    <SidebarWrapper>
+    <SideBar>
       {(["left"] as const).map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>
-            <Icon icon="mdi:burger" color="white" width="35" height="35" />
+            <p>&lt;&gt;openSidebar()&lt;/&gt;</p>
           </Button>
           <Drawer
+            sx={DrawerWrapper}
             anchor={anchor}
-            open={state[anchor]}
+            open={left}
             onClose={toggleDrawer(anchor, false)}
           >
             <Box
@@ -98,11 +94,19 @@ const Sidebar = () => {
             >
               <List>
                 {tabs.map((el, index) => (
-                  <ListItem key={el.label} disablePadding>
-                    <Link to={el.path} component={RouterLink}>
+                  <Link
+                    onClick={() => handleClick(index)}
+                    sx={{
+                      color: activeTab === index ? `#edbb61` : `#FFFFFF`,
+                    }}
+                    key={el.label}
+                    to={el.path}
+                    component={RouterLink}
+                  >
+                    <ListItem disablePadding>
                       <ListItemText primary={el.label} />
-                    </Link>
-                  </ListItem>
+                    </ListItem>
+                  </Link>
                 ))}
               </List>
               <Divider />
@@ -110,7 +114,7 @@ const Sidebar = () => {
           </Drawer>
         </React.Fragment>
       ))}
-    </SidebarWrapper>
+    </SideBar>
   );
 };
 

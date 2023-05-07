@@ -1,50 +1,36 @@
 import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
 
 import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 
-import { Icon } from "@iconify/react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
+
+import { ContactWrapper, styles } from "./styled";
+
+import { code } from "./codeVar";
 
 const Contact = () => {
+  const lines = code.split("\n");
+  const formattedCode = lines
+    .map((line, index) => `${index + 1} ${line}`)
+    .join("\n");
+
   return (
-    <Box>
-      <p>Contact me</p>
-      <Icon icon="mdi:user" color="#a5a8aa" />
-
-      <Icon icon="ri:mail-send-line" color="#a5a8aa" />
-      <a target="_blank" rel="noreferrer" href="https://t.me/liubava_dev">
-        <Icon icon="icon-park-outline:telegram" />
-        <p> @liubava_dev</p>
-      </a>
-
-      <div>
-        <p>
-          <Icon icon="bi:envelope-heart" color="#fbfcfc" />
-          <a href="#send_email">liubava.k@bk.ru</a>
-        </p>
-        <p>
-          <Icon icon="ic:round-local-phone" color="#fbfcfc" />
-          <a href="tel:+79773255335">+7 9773255335</a>
-        </p>
-
-        <p>
-          <Icon icon="carbon:logo-github" color="#fbfcfc" />
-          <a target="_blank" rel="noreferrer" href="https://github.com/Lubava7">
-            GitHub
-          </a>
-        </p>
-        <p>
-          <Icon icon="carbon:letter-hh" color="#fbfcfc" />
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://hh.ru/applicant/resumes/view?resume=d5f45eb6ff08d8d9930039ed1f69654b635352"
-          >
-            Resume HH
-          </a>
-        </p>
-      </div>
-    </Box>
+    <ContactWrapper>
+      <Box>
+        <SyntaxHighlighter
+          language="javascript"
+          style={vscDarkPlus}
+          // sx={styles}
+          showLineNumbers={true}
+        >
+          {code}
+        </SyntaxHighlighter>
+      </Box>
+    </ContactWrapper>
   );
 };
 

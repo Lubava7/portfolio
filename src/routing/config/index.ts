@@ -23,13 +23,13 @@ interface PrivateRoute {
 }
 
 export const PrivateRoutesArray: PrivateRoute[] = [
-  {
-    path: MAIN_PATH,
-    component: MAIN_PAGE,
-  },
+  // {
+  //   path: MAIN_PATH,
+  //   component: MAIN_PAGE,
+  // },
   {
     path: PORT_PATH,
-    component: PORT_PAGE,
+    component: ABOUT_PAGE,
   },
   {
     path: ABOUT_PATH,

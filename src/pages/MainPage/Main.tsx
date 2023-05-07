@@ -12,6 +12,11 @@ import { Icon } from "@iconify/react";
 
 import { MainWrapper, globalStyle } from "./styled";
 
+import AboutMe from "src/components/AboutMe/AboutMe";
+import Contact from "src/components/Contact/Contact";
+import Work from "src/components/Work/Work";
+import CVdata from "src/components/CVdata/CVdata";
+
 const Main = () => {
   const [activeTab, setActiveTab] = useState(() => {
     const storedValue = localStorage.getItem("activeTab");
@@ -30,18 +35,22 @@ const Main = () => {
     {
       label: "_about",
       path: "/portfolio/about",
+      // component: <AboutMe />,
     },
     {
       label: "_contacts",
       path: "/portfolio/contacts",
+      // component: <Contact />,
     },
     {
       label: "_works",
       path: "/portfolio/works",
+      // component: <Work />,
     },
     {
       label: "_CV",
       path: "/portfolio/cv",
+      // component: <CVdata />,
     },
   ];
 

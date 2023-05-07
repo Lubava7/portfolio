@@ -10,5 +10,5 @@ export const PORT_PAGE = lazy(() => import("src/pages/MainPage/Main"));
 
 export const ABOUT_PAGE = LazyPage("AboutMe/AboutMe");
 export const CONTACTS_PAGE = LazyPage("Contact/Contact");
-export const CV_PAGE = LazyPage("CVdata/CVworks");
+export const CV_PAGE = LazyPage("CVdata/CVdata");
 export const WORKS_PAGE = LazyPage("Work/Work");

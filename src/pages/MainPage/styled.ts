@@ -32,6 +32,7 @@ export const MainWrapper = styled(Box)({
     borderRadius: 0,
     backgroundColor: "#1e1e1e",
     border: "1px solid #393737",
+    padding: 0,
     ":hover": {
       color: "white",
       backgroundColor: "#1e1e1e",
@@ -39,22 +40,15 @@ export const MainWrapper = styled(Box)({
       transition: ".5s all",
     },
     "& .MuiLink-root": {
-      // color: "#393737",
+      width: "100%",
       textDecoration: "none",
+      padding: 0,
+      height: "100%",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
     },
   },
-  // "& .MuiContainer-root:nth-of-type(1)": {
-  //   zIndex: 2,
-  //   width: "100%",
-  //   transition: "1s all",
-  //   display: "flex",
-  //   flexDirection: "row",
-  //   justifyContent: "center",
-  //   alignItems: "center",
-  //   position: "fixed",
-  //   borderBottom: "1px solid #393737",
-
-  // },
 });
 
 export const globalStyle = {

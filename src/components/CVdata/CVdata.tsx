@@ -1,91 +1,53 @@
-// import React, { useEffect, useState } from "react";
-// import style from "./CVdata.module.css";
+import React from "react";
 
-import CVworks from "./CVworks";
+import Box from "@mui/material/Box";
 
-import { Icon } from "@iconify/react";
+import { CVWrapper } from "./styled";
 
-type Props = {
-  name: string;
-  age: number;
-  exp: string;
-};
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-const CaseData = ({ name, age, exp }: Props) => {
+import { my_cv_data } from "./CVinterface";
+
+const my_data = `
+Lubava Kanivetc 
+
+Web Developer 
+expirience : more than 1.7 years
+
+Core technologies :
+   - HTML, Css,
+   - React,
+   - Sass, Scss,
+   - JavaScript, TypeScript,
+   - Node, Express,
+   - PostgreSQL,
+   - Git, Linux
+
+ Additional courses:
+   - CS50 - Computer Science
+   - OSSU - CS
+
+   ${my_cv_data}
+
+
+
+
+
+`;
+
+const CVdata = () => {
   return (
-    <>
-      <div id="case_data">
-        <div>
-          <h2>{name}</h2>
-          <p>Web Developer</p>
-          <div>
-            <p>
-              <Icon icon="bi:envelope-heart" color="#fbfcfc" />
-              <a href="#send_email">liubava.k@bk.ru</a>
-            </p>
-            <p>
-              <Icon icon="ic:round-local-phone" color="#fbfcfc" />
-              <a href="tel:+79773255335">+7 9773255335</a>
-            </p>
-            <p>
-              <Icon icon="ic:outline-location-on" color="#fbfcfc" />
-              <a href="##">planet Earth</a>
-            </p>
-            <p>
-              <Icon icon="dashicons:admin-site-alt3" color="#fbfcfc" />
-              <a
-                href=" https://lubava7.github.io/portfolio/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                site portfolio
-              </a>
-            </p>
-            <p>
-              <Icon icon="carbon:logo-github" color="#fbfcfc" />
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/Lubava7"
-              >
-                GitHub
-              </a>
-            </p>
-            <p>
-              <Icon icon="carbon:letter-hh" color="#fbfcfc" />
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://hh.ru/applicant/resumes/view?resume=d5f45eb6ff08d8d9930039ed1f69654b635352"
-              >
-                Resume HH
-              </a>
-            </p>
-          </div>
-        </div>
-        <div>
-          <p>expirience : more than {exp} years</p>
-          <p>Core technologies :</p>
-          <section>
-            <span>HTML, Css</span>
-            <span>React</span>
-            <span>Sass, Scss</span>
-            <span>JavaScript, TypeScript</span>
-            <span>Node, Express</span>
-            <span>PostgreSQL</span>
-            <span>Git, Linux</span>
-          </section>
-          <p>Additional courses:</p>
-          <section>
-            <span>CS50 - Computer Science</span>
-          </section>
-          <div>
-            <CVworks />
-          </div>
-        </div>
-      </div>
-    </>
+    <CVWrapper>
+      <SyntaxHighlighter
+        language="javascript"
+        style={vscDarkPlus}
+        showLineNumbers={true}
+      >
+        {my_data}
+      </SyntaxHighlighter>
+    </CVWrapper>
   );
 };
 
-export default CaseData;
+export default CVdata;
