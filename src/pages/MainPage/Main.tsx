@@ -21,19 +21,19 @@ const Main = () => {
   const tabs = [
     {
       label: "_about",
-      path: "/portfolio/about",
+      path: "/about",
     },
     {
       label: "_contacts",
-      path: "/portfolio/contacts",
+      path: "/contacts",
     },
     {
       label: "_works",
-      path: "/portfolio/works",
+      path: "/works",
     },
     {
       label: "_CV",
-      path: "/portfolio/cv",
+      path: "/cv",
     },
   ];
 

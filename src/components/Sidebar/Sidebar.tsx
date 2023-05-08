@@ -51,22 +51,22 @@ const Sidebar = () => {
     {
       label: "_about",
       component1: <AboutMe />,
-      path: "/portfolio/about",
+      path: "/about",
     },
     {
       label: "_contacts",
       component1: <Contact />,
-      path: "/portfolio/contacts",
+      path: "/contacts",
     },
     {
       label: "_works",
       component1: <Work />,
-      path: "/portfolio/works",
+      path: "/works",
     },
     {
       label: "_CV",
       component1: <CVdata />,
-      path: "/portfolio/cv",
+      path: "/cv",
     },
   ];
 
