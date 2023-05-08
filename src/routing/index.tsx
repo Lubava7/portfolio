@@ -1,4 +1,4 @@
-import React, { Suspense, useState, useEffect } from "react";
+import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { PrivateRoutesArray } from "./config";
 

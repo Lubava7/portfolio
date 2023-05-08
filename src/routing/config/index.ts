@@ -1,15 +1,15 @@
 import { LazyExoticComponent } from "react";
 
 import {
-  MAIN_PAGE,
-  PORT_PAGE,
+  // MAIN_PAGE,
+  // PORT_PAGE,
   ABOUT_PAGE,
   CONTACTS_PAGE,
   CV_PAGE,
   WORKS_PAGE,
 } from "./pages";
 import {
-  MAIN_PATH,
+  // MAIN_PATH,
   PORT_PATH,
   ABOUT_PATH,
   CONTACTS_PATH,

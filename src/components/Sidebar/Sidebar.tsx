@@ -1,11 +1,10 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useCallback } from "react";
 
 import Link from "@mui/material/Link";
 import { Link as RouterLink } from "react-router-dom";
 
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
@@ -16,8 +15,6 @@ import Contact from "src/components/Contact/Contact";
 import AboutMe from "src/components/AboutMe/AboutMe";
 import CVdata from "src/components/CVdata/CVdata";
 import Work from "src/components/Work/Work";
-
-import { Icon } from "@iconify/react";
 
 import { DrawerWrapper, SideBar } from "./styled";
 

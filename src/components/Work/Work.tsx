@@ -1,31 +1,21 @@
-import React, { useState, useCallback } from "react";
-import { useLocation } from "react-router-dom";
-
+import { useState, useCallback } from "react";
 import Link from "@mui/material/Link";
 import { Link as RouterLink } from "react-router-dom";
 
-import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
-import { workArray } from "./WorkList";
-import { ProjectInterface } from "./WorkList";
-
 import { WrapperBox } from "./styled";
-import { Icon } from "@iconify/react";
 
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 import {
-  cra,
-  solar,
-  ytcopy,
+  // cra,
+  // solar,
+  // ytcopy,
   portfolio,
-  booklist,
+  // booklist,
   rixap,
   textTestComp,
 } from "./WorkList";
@@ -35,9 +25,6 @@ const Work = () => {
     const storedValue = localStorage.getItem("activeTab");
     return storedValue !== null ? parseInt(storedValue) : 0;
   });
-
-  const location = useLocation();
-  const { pathname } = location;
 
   const handleClick = useCallback((index: any) => {
     setActiveTab(index);
@@ -96,7 +83,6 @@ const Work = () => {
               component={RouterLink}
               to={""}
             >
-              {/* &gt; */}
               <span>TS</span>
               {el.label}
             </Link>
@@ -111,7 +97,7 @@ const Work = () => {
         >
           {tabs[activeTab].component}
         </SyntaxHighlighter>
-        <a href={tabs[activeTab].link} target="_blank">
+        <a href={tabs[activeTab].link} target="_blank" rel="noreferrer">
           &lt;&gt;See_project&lt;/&gt;
         </a>
       </Container>

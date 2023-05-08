@@ -1,7 +1,3 @@
-import React from "react";
-
-import Box from "@mui/material/Box";
-
 import { CVWrapper } from "./styled";
 
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";

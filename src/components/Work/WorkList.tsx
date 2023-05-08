@@ -24,7 +24,7 @@ const projList = (
     image,
     stack,
     link_link: (
-      <a href={link_link} target="_blank">
+      <a href={link_link} target="_blank" rel="noreferrer">
         {title}
       </a>
     ),
