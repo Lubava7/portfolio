@@ -45,13 +45,6 @@ const Work = () => {
   }, []);
 
   const tabs = [
-    // {
-    //   label: "My first CRA project",
-    //   // component: cra,
-    //   component: textTestComp[5],
-    //   img: "https://github.com/Lubava7/port2/blob/master/src/images/img/GOT.png?raw=true",
-    //   link: "https://lubava7.github.io/react-got/",
-    // },
     {
       label: "Solar System",
       // component: solar,
@@ -81,13 +74,6 @@ const Work = () => {
       img: "",
       link: "https://rixap.ru/",
     },
-    // {
-    //   label: "Booklist",
-    //   component: booklist,
-    //   // component: textTestComp[6],
-    //   img: "",
-    //   link: "https://lubava7.github.io/react-booklist/",
-    // },
   ];
 
   return (
@@ -105,7 +91,7 @@ const Work = () => {
           >
             <Link
               sx={{
-                color: activeTab === index ? `#FFFFFF` : `#393737`,
+                color: activeTab === index ? `#efca88` : `#a1a09d`,
               }}
               component={RouterLink}
               to={""}
@@ -116,7 +102,6 @@ const Work = () => {
             </Link>
           </Button>
         ))}
-        {/* <img src={tabs[activeTab].img} alt="photo" /> */}
       </Container>
       <Container>
         <SyntaxHighlighter
@@ -126,8 +111,6 @@ const Work = () => {
         >
           {tabs[activeTab].component}
         </SyntaxHighlighter>
-
-        {/* <img src={tabs[activeTab].img} alt="photo" /> */}
         <a href={tabs[activeTab].link} target="_blank">
           &lt;&gt;See_project&lt;/&gt;
         </a>
