@@ -5,20 +5,19 @@ import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 import { my_cv_data } from "./CVinterface";
 
-const my_data = `
-Lubava Kanivetc 
+// expirience : more than 1.7 years
 
-Web Developer 
-expirience : more than 1.7 years
+const my_data = `
+Lubava Kanivetc - Web Developer 
 
 Core technologies :
-   - HTML, Css,
-   - React,
-   - Sass, Scss,
+   - React,Redux
+   - Mui styled,
    - JavaScript, TypeScript,
    - Node, Express,
    - PostgreSQL,
    - Git, Linux
+   - HTML, Css,
 
  Additional courses:
    - CS50 - Computer Science
